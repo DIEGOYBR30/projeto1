@@ -1,0 +1,62 @@
+body{
+    background-color: #ffffff
+} 
+
+header{
+    background-color: #336699    
+}
+
+header, nav, section, footer{
+    border:solid #ededed 0.5px; 
+    width:80%;
+}
+
+h1{
+    color:#ff0000
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size:80px
+}
+
+*{
+   margin:0px auto 
+}
+
+nav{
+   height:25px;
+   margin-top: 2px;
+   background-color: #c0c0c0;
+}
+
+nav a{
+   width:200px;
+   float:left;
+   text-decoration: none;
+   margin-top:3px;
+   text-align:center
+}
+
+nav a:hover{
+    color:#ff0000
+}
+
+section{
+    height: 400px;
+}
+
+iframe{
+    width:100%; /* define a largura do contêiner */
+    height: 400px;
+    border:0px;
+}
+
+footer{
+    background-color: #336699;
+}
+
+footer p{
+    margin:10px;
+    color:#ffffff
+}

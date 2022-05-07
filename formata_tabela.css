@@ -1,0 +1,18 @@
+table{
+    border: solid #ededed 3px;
+    width: 90%;
+}
+
+table th{
+    font-weight: bold;
+    background-color: #000000;
+    color:#ffffff;
+    font-family: 'Water Brush', cursive;
+    font-size: 19px;
+}
+
+table td{
+    text-align:center;
+font-family: 'Water Brush', cursive;
+}
+
