@@ -2,17 +2,17 @@
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <meta charset="UTF-8">
     </head>
     <body>
         <%
-            // 1) Receber os dados vindos do formulário CadastrarProdutos.html
+            // 1) Receber os dados vindos do formulÃ¡rio CadastrarProdutos.html
             int codigo;
             String nome, marca;
             double preco;
@@ -40,12 +40,12 @@
                 conexao.close();
 
             } catch (ClassNotFoundException x) {
-                out.print("Você não colocou o driver JDBC no projeto " + x.getMessage());
+                out.print("VocÃª nÃ£o colocou o driver JDBC no projeto " + x.getMessage());
             } catch (SQLException x) {
-                if(x.getErrorCode()==1062){ //Tentativa de duplicação de chave primária (código)
-                    out.print("Este código de produto já está cadastrado");
+                if(x.getErrorCode()==1062){ //Tentativa de duplicaÃ§Ã£o de chave primÃ¡ria (cÃ³digo)
+                    out.print("Este cÃ³digo de produto jÃ¡ estÃ¡ cadastrado");
                 }else{
-                    out.println("Erro número:" + x.getErrorCode());
+                    out.println("Erro nÃºmero:" + x.getErrorCode());
                     out.println("Entre em contato com o administrador do sistema");
                 }
             }
